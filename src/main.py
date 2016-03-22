@@ -163,7 +163,7 @@ for setting_counter, setting in enumerate(settings):
  
         
            
-    output_file = open('../results/results_%s_%s_%s' % (setting_names[setting_counter], dataset_name, datetime.now().strftime('%Y_%m_%d_%H_%M_%S')), "w")
+    output_file = open('../results/results_%s_%s_%s.txt' % (setting_names[setting_counter], dataset_name, datetime.now().strftime('%Y_%m_%d_%H_%M_%S')), "w")
     output_file.write("ParameterSetting:\n%s\n\nPresenting the results:\n\nBest Individuals:\n" % (str(setting)))
     for i in range(len(files)):
         output_file.write("\nProblem %s\n" % (files[i]))
